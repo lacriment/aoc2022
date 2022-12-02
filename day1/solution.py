@@ -1,6 +1,6 @@
 file_content = ""
 with open("input.txt") as f:
-	file_content = f.read()
+    file_content = f.read()
 
 elves = [x.split('\n') for x in file_content.split('\n\n')]
 elves_total = sorted([sum([int(y) for y in x]) for x in elves], reverse=True)
